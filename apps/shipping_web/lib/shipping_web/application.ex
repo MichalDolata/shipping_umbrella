@@ -8,6 +8,7 @@ defmodule ShippingWeb.Application do
     children = [
       # Start the endpoint when the application starts
       supervisor(ShippingWeb.Endpoint, []),
+      worker(ShippingWeb.MonitorChannelWorker, [])
       # Start your own worker by calling: ShippingWeb.Worker.start_link(arg1, arg2, arg3)
       # worker(ShippingWeb.Worker, [arg1, arg2, arg3]),
     ]
