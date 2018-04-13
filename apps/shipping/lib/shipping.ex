@@ -9,7 +9,6 @@ defmodule Shipping do
   @moduledoc """
   Containts functions which help demonstrating app
   """
-  
 
   def test() do
     create_load = %Shipping.Shipper.Commands.CreateLoad{
